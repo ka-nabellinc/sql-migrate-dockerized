@@ -26,6 +26,7 @@ jobs:
           username: kahnabell
           password: ${{ secrets.DOCKER_HUB_PAT }}
       - name: Docker meta
+        id: meta
         uses: docker/metadata-action@v4
         with:
           images: |
